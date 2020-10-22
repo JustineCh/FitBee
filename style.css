@@ -1,0 +1,270 @@
+* {
+  --modal-duration: 1s;
+  --primary-color: #ffc914;
+  --secondary-color: #f5cb5c;
+  --tertiary-color: #bfbfbf;
+  --quaternary-color: #efdc9e;
+  --basic-color: #e8eddf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  transition: transform 0.3s ease;
+}
+
+body.show-nav {
+  transform: translateX(200px);
+}
+
+nav {
+  background-color: #0e0e0e;
+  border-right: 2px solid rgba(255, 201, 20, 0.7);
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+nav .logo {
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav .logo img {
+  width: 90%;
+  height: auto;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 2px solid rgba(255, 201, 20, 0.1);
+  padding: 20px;
+}
+
+nav ul li:first-of-type {
+  border-top: 2px solid rgba(255, 201, 20, 0.1);
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: relative;
+  color: #ffffff;
+  height: 85vh;
+  border-bottom: 2px solid var(--primary-color);
+  background-image: url("img/main3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#logo-container {
+  height: 80%;
+  position: relative;
+  top: 40px;
+  right: 300px;
+}
+
+.logo-img {
+  height: 450px;
+}
+
+.motto-lg {
+  letter-spacing: 2px;
+  font-family: "Black Ops One", cursive;
+  font-size: 50px;
+}
+
+#toggle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.cta-btn {
+  padding: 15px 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header div button:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1100px;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header {
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form-input {
+  padding: 8px;
+  width: 100%;
+}
+
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section {
+   margin-top: 150px
+}
+
+.section-title {
+   text-align: center;
+   font-family: "Black Ops One", cursive;
+   font-size: 55px;
+   border-bottom: 2px solid var(--primary-color);
+   padding-bottom: 3px;
+}
+
+.services-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.service-card {
+   width: 300px;
+   height: 350px;
+   margin: 20px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border: 2px solid #f2f2f2;
+   text-align: justify;
+   position: relative;
+}
+
+.service-name {
+   text-align: center;
+}
+
+.service-card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+
+.service-img {
+   position: absolute;
+   bottom: 10%;
+   right: 33%;
+   height: 100px;
+}
+
+#catering-img {
+   right: 60px;
+}
+
+
+
+@keyframes modalopen {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}

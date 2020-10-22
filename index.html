@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c56502c682.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>FitBee - take care of your future self</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="img/fitbee_logo.png" /></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Servives</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <div id="logo-container">
+        <img src="img/fitbee_logo2.png" class="logo-img">
+        <p class="motto-lg">Take care of your future self!</p>
+        <button class="cta-btn" id="open">Sign Up</button>
+      </div></div>
+    </header>
+    <div class="container">
+       <section class="section section-1">
+          <h2 class="section-title">What we are the best at</h2>
+          <div class="services-container">
+             <div class="service-card">
+                <h3 class="service-name">Workout & challenges</h3>
+                <p class="service-desc">Over 100 challenges plans and even more workout videos available on our platform. Check it out!</p>
+                <img class="service-img" src="img/muscle.png">
+             </div>
+             <div class="service-card">
+                <h3 class="service-name">Diet plans</h3>
+                <p class="service-desc">Are you planning to start building muscle or maybe you just want to eat healthy and don't know how? You've just hit the spot, we're the best at it!</p>
+                <img class="service-img" src="img/diet.png">
+             </div>
+             <div class="service-card">
+                <h3 class="service-name">Healthy Recepies</h3>
+                <p class="service-desc">
+                  Looking for an idea for breakfast, lunch, snack or dinner? We can help you! Thousands of delicious recipes are waiting for you. Give it a try!</p>
+                <img class="service-img" src="img/recepies.png">
+             </div>
+             <div class="service-card">
+                <h3 class="service-name">Personal Plan</h3>
+                <p class="service-desc">Have you tried everything and nothing worked? We can help you achieve your goal. Nothing is imposible. You will achieve your goal with us!</p>
+                <img class="service-img" src="img/individual.png">
+             </div>
+             <div class="service-card">
+                <h3 class="service-name">Weight Loss Programs</h3>
+                <p class="service-desc">It's time to take care of yourself. Nothing is more important than your own health. We will help you learn to live healthy!</p>
+                <img class="service-img" src="img/weight.png">
+             </div>
+             <div class="service-card">
+                <h3 class="service-name">Catering</h3>
+                <p class="service-desc">Are you organizing a party? Do you work a lot and you don't have time to cook yourself? We will take care of it for you so you can enjoy delicious food!</p>
+                <img class="service-img" id="catering-img" src="img/catering.png">
+             </div>
+          </div>
+       </section>
+      
+
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+    </div>
+
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with Us and get free samples of our products!</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" class="modal-form-input" id="name" placeholder="Enter Name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" class="modal-form-input" placeholder="Enter Email" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="modal-form-input"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                class="modal-form-input"  
+                placeholder="Confirm Password"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
